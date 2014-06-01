@@ -1,0 +1,48 @@
+#imageCropModal{
+    margin-top: 20px !important;
+	top:50px !important;
+}
+.img-crop {
+    -moz-user-select: none;
+    position: relative;
+}
+.img-crop .img-crop-content {
+}
+.img-crop .img-crop-modal {
+    -moz-user-select: none;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    /* border:1px solid black;
+    border-right: 2px dashed black;
+    border-bottom: 2px dashed black; */
+}
+.img-crop-modal:hover{
+    cursor: move;
+}
+.img-crop-modal .img-crop-expendwidth {
+    position: absolute;
+    right: -5px;
+    width: 10px;
+    height: 100%;
+    cursor: e-resize;
+}
+.img-crop-modal .img-crop-expendheight {
+    position: absolute;
+    width: 100%;
+    bottom: -5px;
+    height: 10px;
+    cursor: n-resize;
+}
+.img-crop-modal .img-crop-expendwh {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -15px;
+    bottom: -15px;
+    background:black;
+    cursor: se-resize;
+}

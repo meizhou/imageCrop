@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="./imagecrop.css">
+    <script type="text/javascript" src="./jquery.imagecrop.js"></script>
+    <title></title>
+</head>
+<body>
+<form action="image.php" method="post" enctype="multipart/form-data" >
+    <input type="file" id="ImgCropFile" name="file">
+    <input type="hidden" name="imgCropInfo" id="imgCropInfo">
+    <input type="submit" class="" value="提交">
+</form>
+<button class="sure">选图确定</button>
+<div class="imageCrop"></div>
+</body>
+</html>
+<script type="text/javascript">
+$(function(){
+    var cropInfo;
+    $('#ImgCropFile').imageCrop({
+        wrap: ".imageCrop",
+        onChange: function() {
+        }
+    });
+    $(".sure").click(function(event) {
+        cropInfo = $('#ImgCropFile').imageCrop('getVal');
+        console.log('tag',cropInfo);
+    });
+    $('form').submit(function(event) {
+        $('#imgCropInfo').val(cropInfo);
+    });
+})
+</script>
