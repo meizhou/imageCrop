@@ -7,12 +7,12 @@ $(function() {
         this._init();
     }
     ImageCrop.defaults = {
-        wrap: ".imageCrop",
-        defaultShowWidth: 400,
-        cropMinWidth: 640,
-        cropMinHeight: 300,
-        cropMaxHeight: 640,
-        onChange: function() {}
+        wrap: ".imageCrop",      //产生缩略图的地方
+        defaultShowWidth: 400,   //默认的缩略图的大小px
+        cropMinWidth: 640,       //裁切图最小多大
+        cropMinHeight: 300,      //最小高
+        cropMaxHeight: 640,      //最大高
+        onChange: function() {}  //产生缩略图完成时回调的函数
     }
     ImageCrop.prototype = {
         _init: function() {

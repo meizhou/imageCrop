@@ -2,6 +2,7 @@
     echo $_POST['imgCropInfo'];
     $upload = $_FILES["file"];
     var_dump($upload);
+    //todo 要判断一下$_POST['imgCropInfo']传进来的数据是否为零，合法;
     getCropImage($upload, $_POST['imgCropInfo'], "crop.jpg");
     /**
      * 获取图片格式

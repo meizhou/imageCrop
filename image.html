@@ -23,6 +23,7 @@ $(function(){
     $('#ImgCropFile').imageCrop({
         wrap: ".imageCrop",
         onChange: function() {
+            console.log("onChange");
         }
     });
     $(".sure").click(function(event) {
