@@ -15,8 +15,8 @@ imageCrop
               onChange: function() {}  //产生缩略图完成时回调的函数
           }
           可以在$("#id").imageCrop({/*可以在这里面修改配置项*/})；
-          拖拽框拖拽完毕以后，要调用$("#id").imageCrop('getVal'),得到当前的裁剪信息；结构是
-          400,328,268,126,39,61  
+          拖拽框拖拽完毕以后，要调用$("#id").imageCrop('getVal'),
+          得到当前的裁剪信息；结构是string   400,328,268,126,39,61  
           width  默认的缩略图宽(400px)
           height 默认的缩略图高(400px*比例)
           width  要裁剪的宽px
