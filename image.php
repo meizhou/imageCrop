@@ -2,7 +2,7 @@
     echo $_POST['imgCropInfo'];
     $upload = $_FILES["file"];
     var_dump($upload);
-    getCropImage($upload, $_POST['imgCropInfo'], "a.jpg");
+    getCropImage($upload, $_POST['imgCropInfo'], "crop.jpg");
     /**
      * 获取图片格式
      *
