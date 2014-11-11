@@ -25,3 +25,4 @@ imageCrop
           top    距离上边px
           #id为要监听的input name='file'
 
+	
